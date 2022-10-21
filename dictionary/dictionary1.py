@@ -14,4 +14,17 @@ med värdet
 "sista"
   """
 
+def fyll_på():
+      dictionary["nyckel3"] = "värde3"
+      dictionary["nyckel4"] = "sista"
+
+
+print(dictionary)
+fyll_på()
+print(dictionary)
+
+
+
+
+
 

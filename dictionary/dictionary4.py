@@ -15,3 +15,17 @@ så ska metoden returnera strängen:
 Tips: metoden dict.get() kan vara bra att använda
    """
 
+dictionary = {"nyckel1" : "värde1", "nyckel2" : "värde2"}
+
+def update_or_insert(arg1,arg2,arg3):
+       if arg2 in arg1:
+             x = arg1.setdefault(arg2,arg3)
+             return "Nyckeln fanns och fick ett nytt värde:",arg1
+       elif arg2 not in arg1:
+             x = arg1.setdefault(arg2,arg3)
+             return "Nyckeln har lagts in med värde"
+
+
+print(update_or_insert(dictionary, "nyckel3", "värde1"))
+             
+
